@@ -21,7 +21,7 @@ fi
 # Dotfiles
 # ================================
 
-export DOTFILES=$HOME/Repos/dotfiles
+export DOTFILES=$HOME/Sources/dotfiles
 
 for config_file in $DOTFILES/**/*.bashrc
 do

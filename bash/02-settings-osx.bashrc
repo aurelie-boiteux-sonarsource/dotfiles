@@ -17,7 +17,7 @@ export GIT_PROMPT_PATH=/usr/local/git/contrib/completion/git-prompt.sh
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
 
 # NVM installed with Homebrew
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
-export PATH=$NVM_DIR:$PATH
+#export NVM_DIR="$HOME/.nvm"
+#. "/usr/local/opt/nvm/nvm.sh"
+#. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+#export PATH=$NVM_DIR:$PATH

@@ -28,7 +28,7 @@ alias h="history"
 # ================================
 # Git repositories location
 # ================================
-export REPOS=$HOME/Repos
+export REPOS=$HOME/Sources
 alias repos="cd $REPOS"
 
 # ================================
