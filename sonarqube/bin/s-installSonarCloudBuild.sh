@@ -69,12 +69,12 @@ echo "sonar.telemetry.url=http://xavier.gva.sonarsource.com:9876/sonarqube" >> $
 echo "sonar.jdbc.username=sonarqube" >> $SONAR_PROPERTIES_FILE
 echo "sonar.jdbc.password=sonarqube" >> $SONAR_PROPERTIES_FILE
 # General config for SonarCloud
-echo "sonar.core.serverBaseURL=https://fab.eu.ngrok.io" >> $SONAR_PROPERTIES_FILE
+echo "sonar.core.serverBaseURL=https://aurelie.eu.ngrok.io" >> $SONAR_PROPERTIES_FILE
 echo "sonar.onboardingTutorial.showToNewUsers=true" >> $SONAR_PROPERTIES_FILE
 echo "sonar.lf.enableGravatar=true" >> $SONAR_PROPERTIES_FILE
 echo "sonar.pullrequest.github.endpoint=https://api.github.com" >> $SONAR_PROPERTIES_FILE
 # Sensitive info about integrations, loaded from local file
-ALM_CONFIG_FILE="/Users/bellingard/Dropbox/SonarSource/SonarCloudTesting/Properties-For-SonarCloud-Testing.properties"
+ALM_CONFIG_FILE="/Users/aurelie/Sources/conf/Properties-For-SonarCloud-Testing.properties"
 while IFS='' read -r line || [[ -n "$line" ]]; do
     echo "$line" >> $SONAR_PROPERTIES_FILE
 done < "$ALM_CONFIG_FILE"

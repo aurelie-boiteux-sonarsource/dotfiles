@@ -1,8 +1,8 @@
 # Set your user tokens as environment variables
 
 [core]
-  excludesfile = ~/.gitignore
-  autocrlf = input
+	excludesfile = /Users/aurelie/.gitignore
+	autocrlf = input
   safecrlf = true
   editor = vim
 
@@ -57,11 +57,11 @@
   unstage = reset HEAD
 
 [user]
-  name = Fabrice Bellingard
-  email = fabrice.bellingard@sonarsource.com
+  name = Aurelie Boiteux-Cabourdin
+  email = aurelie.boiteux@sonarsource.com
 
 [github]
-  user = bellingard
+  user = aurelie-boiteux-sonarsource
   token = $GITHUB_TOKEN
 
 # commands will be autocorrect (rset -> reset)
@@ -85,3 +85,9 @@
 	required = true
 [credential]
 	helper = osxkeychain
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
